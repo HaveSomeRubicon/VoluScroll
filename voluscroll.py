@@ -26,6 +26,10 @@ class VolumeScroller:
         # with self.listener:
         self.listener.start()
 
+    def stop(self):
+        self.listener.stop()
+
+
 def main():
     volume_scroller = VolumeScroller()
     volume_scroller.start()
