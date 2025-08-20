@@ -7,7 +7,7 @@ middle_mouse_down = False
 
 def on_scroll(mouse_x, mouse_y, direction_x, direction_y):
     print(f"MOUSE X: {mouse_x}, MOUSE Y: {mouse_y}, Direction X: {direction_x}, Direction Y: {direction_y}")
-    if middle_mouse_down == True:
+    if middle_mouse_down:
         if direction_y > 0:
             action = Key.media_volume_up
         elif direction_y < 0:
