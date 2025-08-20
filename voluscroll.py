@@ -26,7 +26,10 @@ class VolumeScroller:
         # with self.listener:
         self.listener.start()
 
-
-if __name__ == "__main__":
+def main():
     volume_scroller = VolumeScroller()
     volume_scroller.start()
+
+
+if __name__ == "__main__":
+    main()
