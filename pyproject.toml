@@ -1,0 +1,20 @@
+[project]
+name = "voluscroll"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HaveSomeRubicon", email = "97649192+HaveSomeRubicon@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pynput>=1.8.1",
+    "pystray>=0.19.5",
+]
+
+[project.scripts]
+voluscroll = "voluscroll:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
